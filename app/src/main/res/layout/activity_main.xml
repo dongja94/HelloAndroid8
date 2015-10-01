@@ -12,29 +12,56 @@
         android:id="@+id/text_message"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/hi_android"
-        android:textSize="20sp" />
+        android:text="@string/hi_android" />
+
+    <Button
+        android:id="@+id/btn_send"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/text_message"
+        android:text="Send" />
+
+    <EditText
+        android:id="@+id/edit_input"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/btn_send" />
 
     <Button
         style="?android:attr/buttonStyleSmall"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Send"
-        android:id="@+id/btn_send"
-        android:layout_below="@+id/text_message"
+        android:text="show google"
+        android:id="@+id/btn_google"
+        android:layout_below="@+id/edit_input"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:textSize="20sp" />
+        android:layout_alignParentStart="true" />
 
-    <EditText
+    <Button
+        style="?android:attr/buttonStyleSmall"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/edit_input"
-        android:layout_below="@+id/btn_send"
+        android:text="dial"
+        android:id="@+id/btn_dial"
+        android:layout_below="@+id/btn_google"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:textSize="20sp"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true" />
+        android:layout_alignParentStart="true" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Other"
+        android:id="@+id/btn_other"
+        android:layout_below="@+id/btn_dial"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
 
 </RelativeLayout>
